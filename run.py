@@ -2,12 +2,36 @@ import Part2,Part3,Part4
 import codecs
 import os
 import numpy as np
+import time
+import threading as Thread
 
 def input_justify(language_list):
     nb = input('Choose a language: ')
     while nb not in language_list:
         nb = input('Please input a valid language: ')
+    if nb in language_list:
+        print('Please wait for process to finish (Depending on size of data, up to few seconds to minutes)')
     return nb
+
+
+def main_func(f_in,rvs_emi_dict,tr_d,em_d,labels):
+
+    ######## Main Answer Here #######
+
+
+    ### Part2 out is dev.p2_out #####
+    ### Part3 out is dev.p2_out #####
+    ### Part4 out is dev.p2_out #####
+
+
+    ## Part2 Generate output by emission ##
+    Part2.gen_dev_out(rvs_emi_dict, f_in)
+
+    ## Part3 Generate output by viterbi ##
+    Part3.rslt_out(f_in,tr_d,em_d,labels)
+
+    ## Part3 Generate output by forward-backward ##
+    Part4.rslt_out(f_in,tr_d,em_d,labels)
 
 
 
@@ -26,27 +50,9 @@ if __name__ == "__main__":
     f_in = cwd+'/'+in_lan+'/dev.in'
     labels = ['O', 'B-neutral', 'I-neutral', 'B-positive', 'I-positive', 'B-negative', 'I-negative']
     trans_dict = Part3.gen_transition(modified_train)
-    emi_dict = Part2.gen_emission(modified_train)
+    rvs_emi_dict = Part2.gen_emission(modified_train)
     tr_d=Part3.refined_trans_dict(trans_dict,labels)
-    em_d=Part3.refined_emi_dict(emi_dict,labels)
+    em_d=Part3.refined_emi_dict(rvs_emi_dict,labels)
 
+    main_func(f_in,rvs_emi_dict,tr_d,em_d,labels)
 
-
-
-
-    ######## Main Answer Here #######
-
-
-    ### Part2 out is dev.p2_out #####
-    ### Part3 out is dev.p2_out #####
-    ### Part4 out is dev.p2_out #####
-
-
-    ## Part2 Generate output by emission ##
-    Part2.gen_dev_out(Part2.gen_emission(modified_train), f_in)
-
-    ## Part3 Generate output by viterbi ##
-    Part3.rslt_out(f_in,tr_d,em_d,labels)
-
-    ## Part3 Generate output by forward-backward ##
-    Part4.rslt_out(f_in,tr_d,em_d,labels)
