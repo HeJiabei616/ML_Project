@@ -1,4 +1,4 @@
-import Part2,Part3,Part4
+import Part2,Part3,Part4,Part5
 import codecs
 import os
 import numpy as np
@@ -30,8 +30,11 @@ def main_func(f_in,rvs_emi_dict,tr_d,em_d,labels):
     ## Part3 Generate output by viterbi ##
     Part3.rslt_out(f_in,tr_d,em_d,labels)
 
-    ## Part3 Generate output by forward-backward ##
+    ## Part4 Generate output by forward-backward ##
     Part4.rslt_out(f_in,tr_d,em_d,labels)
+
+    ## Part5 Generate output by forward-backward ##
+    Part5.rslt_out(f_in,tr_d,em_d,labels)
 
 
 
