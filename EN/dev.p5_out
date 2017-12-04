@@ -204,7 +204,7 @@ a O
 variety O
 of O
 the O
-beer I-positive
+beer B-positive
 ( O
 cold O
 and O
@@ -1620,7 +1620,7 @@ a O
 lot O
 of O
 good O
-dishes I-positive
+dishes B-positive
 since O
 we O
 knew O
@@ -1746,7 +1746,7 @@ it O
 Love O
 their O
 drink O
-menu I-positive
+menu B-positive
 . O
 
 If O
@@ -3480,7 +3480,7 @@ touristy O
 . O
 
 The O
-menu I-positive
+menu B-positive
 is O
 very O
 limited O
@@ -3598,7 +3598,7 @@ was O
 clear O
 he O
 didn O
-’ I-neutral
+’ B-neutral
 t O
 really O
 care O
@@ -3755,7 +3755,7 @@ low O
 on O
 creativity O
 and O
-selection I-positive
+selection B-positive
 . O
 
 I O
@@ -3877,7 +3877,7 @@ it O
 
 It's O
 very O
-spicy I-positive
+spicy B-positive
 but O
 not O
 offensive O
@@ -4125,7 +4125,7 @@ I O
 had O
 the O
 kafta O
-plate I-positive
+plate B-positive
 and O
 I O
 enjoyed O
@@ -4154,7 +4154,7 @@ list I-positive
 . O
 
 The O
-steak I-negative
+steak B-negative
 was O
 done O
 to O
@@ -4205,7 +4205,7 @@ great O
 . O
 
 limited O
-menu I-positive
+menu B-positive
 , O
 no-so-fresh O
 ingredients B-positive

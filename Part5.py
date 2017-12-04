@@ -14,25 +14,30 @@ def mix_method(emi_dict,trans_dict,sentence,labels):
     viterbi_label = Part3.viterbi(trans_dict,emi_dict,sentence,labels)
     fb_label = Part4.forward_backward(emi_dict,trans_dict,sentence,labels)
 
-    final_labels = viterbi_label
+    final_labels = viterbi_label # Us
     for index in range (N):
-        c_vb_lb = viterbi_label[index]
-        c_fb_lb = fb_label[index]
-        p_vb_lb = 'START'
-        if index >1:
-            p_vb_lb = viterbi_label[index-1]
-        if c_vb_lb == 'O' and c_fb_lb != 'O':
-            if c_fb_lb[0]=='I':
-                fb_likely=False #ini
-                for p_index in range (index):
-                    if viterbi_label[p_index] != 'O':
-                        fb_likely = 'False'
-                        break
-                    fb_likely = True
-                if fb_likely==True:
-                    print(obs_data[index])
-                    c_fb_lb.replace('I-','B-')
-                    final_labels[index]=c_fb_lb
+        c_vb_lb = viterbi_label[index] # Current viterbi label
+        c_fb_lb = fb_label[index] # Current forward-backward label
+        if c_vb_lb == 'O' and c_fb_lb != 'O': # Check if current viterbi is O and fb is some other
+            # If so
+            fb_likely = False  # ini flag
+            # Loop all previous index for viterbi
+            for p_index in range(index):
+                # Check if all previous viterbi output are all 'O'
+                if viterbi_label[p_index] != 'O':
+                    # If got some non-'O' entity which indicate viterbi would probably working, set flag to false, break
+                    fb_likely = 'False'
+                    break
+                # If all viterbi out are 'O' then set flag to true
+                fb_likely = True
+            if fb_likely == True:
+                # Start to adapt fb output if fb flag set to true
+                if c_fb_lb[0] == 'I':
+                    # Correct fb entity since FB are more sentiment driven (since all 'O' before then should be 'B' here)
+                    c_fb_lb = 'B-'+c_fb_lb[2:]
+                # Write to final output
+                final_labels[index] = c_fb_lb
+
     return final_labels
 
 def rslt_out(file_path,trans_dict,emi_dict,labels):
