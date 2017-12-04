@@ -416,7 +416,7 @@ we O
 were O
 looking O
 for O
-regular O
+regular B-positive
 lettuce O
 and O
 some O
@@ -488,7 +488,7 @@ prices O
 . O
 
 The O
-location O
+location B-positive
 and O
 ambience B-positive
 is O
@@ -829,7 +829,7 @@ was O
 introduced O
 to O
 this O
-place O
+place B-positive
 and O
 this O
 is O
@@ -1610,7 +1610,7 @@ helpful O
 in O
 suggesting O
 us O
-drinks O
+drinks B-positive
 and O
 helped O
 us O
@@ -1620,7 +1620,7 @@ a O
 lot O
 of O
 good O
-dishes B-positive
+dishes O
 since O
 we O
 knew O
@@ -1746,7 +1746,7 @@ it O
 Love O
 their O
 drink O
-menu B-positive
+menu O
 . O
 
 If O
@@ -2024,7 +2024,7 @@ close O
 by O
 like O
 Mimi's O
-Cafe O
+Cafe B-positive
 and O
 Claim O
 Jumper O
@@ -2187,7 +2187,7 @@ Schooner O
 or O
 Later's O
 charming O
-location O
+location B-positive
 along O
 the O
 marina O
@@ -2331,7 +2331,7 @@ This O
 is O
 a O
 wonderful O
-place O
+place B-positive
 on O
 all O
 stand O
@@ -3480,7 +3480,7 @@ touristy O
 . O
 
 The O
-menu B-positive
+menu O
 is O
 very O
 limited O
@@ -3598,7 +3598,7 @@ was O
 clear O
 he O
 didn O
-’ B-neutral
+’ O
 t O
 really O
 care O
@@ -3755,7 +3755,7 @@ low O
 on O
 creativity O
 and O
-selection B-positive
+selection O
 . O
 
 I O
@@ -3877,7 +3877,7 @@ it O
 
 It's O
 very O
-spicy B-positive
+spicy O
 but O
 not O
 offensive O
@@ -4047,7 +4047,7 @@ is O
 the O
 kind O
 of O
-place O
+place B-positive
 you'd O
 like O
 to O
@@ -4125,7 +4125,7 @@ I O
 had O
 the O
 kafta O
-plate B-positive
+plate O
 and O
 I O
 enjoyed O
@@ -4154,7 +4154,7 @@ list I-positive
 . O
 
 The O
-steak B-negative
+steak O
 was O
 done O
 to O
@@ -4205,7 +4205,7 @@ great O
 . O
 
 limited O
-menu B-positive
+menu O
 , O
 no-so-fresh O
 ingredients B-positive
@@ -4271,7 +4271,7 @@ There O
 is O
 only O
 one O
-place O
+place B-positive
 on O
 the O
 east O

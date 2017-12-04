@@ -54,8 +54,8 @@ def forward_backward(emi_dict,trans_dict,obs,labels):
                 label_u=labels[u]
                 for v in range(lb_len):
                     label_v=labels[v]
-                    if obs_data[j] in emi_dict[label_v].keys():
-                        alpha[u][j] += alpha[v][j-1]*trans_dict[label_v][label_u]*emi_dict[label_v][obs_data[j]]
+                    if obs_data[j-1] in emi_dict[label_v].keys():
+                        alpha[u][j] += alpha[v][j-1]*trans_dict[label_v][label_u]*emi_dict[label_v][obs_data[j-1]]
                     else:
                         alpha[u][j] += alpha[v][j-1]*trans_dict[label_v][label_u]*emi_dict[label_v]['#UNK#']
 

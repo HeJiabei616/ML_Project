@@ -199,7 +199,7 @@ restaurant O
 se O
 trouvant O
 au-dessus O
-du B-positive
+du O
 marché O
 , O
 l O
@@ -1170,7 +1170,7 @@ corrects O
 
 Que O
 le O
-chef B-neutral
+chef O
 cherche O
 à O
 réiventer O
@@ -1284,7 +1284,7 @@ situé O
 repas O
 et O
 un O
-vin B-negative
+vin O
 irréprochable O
 , O
 service B-negative
@@ -1298,7 +1298,7 @@ clients O
 avec O
 un O
 panneau O
-de B-negative
+de O
 photos O
 de O
 personnalités O
@@ -1486,7 +1486,7 @@ tapenade O
 . O
 
 Les O
-desserts B-positive
+desserts O
 maisons O
 apparemment O
 sont O
@@ -2083,7 +2083,7 @@ beau O
 menu O
 à O
 35 O
-euros B-neutral
+euros O
 le O
 midi O
 qui O
@@ -2393,7 +2393,7 @@ pour O
 donner O
 des O
 ordres O
-aux B-negative
+aux O
 autres O
 serveurs B-negative
 . O
@@ -2482,7 +2482,7 @@ goût O
 à O
 part O
 celui O
-de B-positive
+de O
 l'huile O
 , O
 bière B-negative
@@ -2801,7 +2801,7 @@ fraisier O
 ( O
 plutot O
 une O
-mousse O
+mousse B-negative
 décoré O
 de O
 quelques O
@@ -2883,7 +2883,7 @@ vraiment O
 ? O
 
 Le O
-saumon B-neutral
+saumon O
 n'était O
 pas O
 très O
@@ -3095,7 +3095,7 @@ vient O
 pas O
 à O
 un O
-buffet O
+buffet B-negative
 à O
 volonté O
 pour O
@@ -3233,7 +3233,7 @@ le O
 rez-de-chaussée O
 était O
 destiné O
-aux B-negative
+aux O
 habitués O
 et O
 amateur O
@@ -3501,7 +3501,7 @@ deux O
 plats O
 et O
 deux O
-desserts B-positive
+desserts O
 à O
 la O
 carte B-positive
@@ -3704,7 +3704,7 @@ Le O
 moelleux O
 speculos O
 / O
-chocolat B-positive
+chocolat O
 était O
 a O
 tom O
